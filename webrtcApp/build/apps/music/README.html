@@ -1,0 +1,33 @@
+<h1 id="hello-chrome-firefox-meet-server-less-webrtc-">Hello Chrome &amp; Firefox, meet server-less WebRTC!</h1>
+<p>Congratulations to Firefox and Chrome for the first
+<a href="https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/">interoperable WebRTC call</a>!
+This is a fantastic first step towards a future where browser-to-browser
+real-time communication is a reality.</p>
+<p>We’re excited about the potential for real-time at <a href="https://www.firebase.com/">Firebase</a>. Gupshup is
+a WebRTC based video calling demo that works on the latest version
+of Chrome and Firefox. It uses Firebase to signal your WebRTC calls so <strong>you
+don’t need any servers to use this new technology</strong>.</p>
+<h3 id="-live-demo-hosted-on-github-pages-http-firebase-github-com-gupshup-"><a href="http://firebase.github.com/gupshup">Live Demo hosted on Github pages!</a></h3>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="https://www.google.com/intl/en/chrome/browser/beta.html">Chrome Beta</a> (v25) or higher.</li>
+<li><a href="http://nightly.mozilla.org/">Firefox Nightly</a> with the <code>media.peerconnection.enabled</code> preference set to <code>true</code>.</li>
+</ul>
+<h2 id="how-it-works">How It Works</h2>
+<p>Chrome and Firefox announced recently that their WebRTC APIs now
+<a href="http://www.webrtc.org/interop">interoperate</a>. The
+<a href="https://code.google.com/p/webrtc-samples/source/browse/trunk/apprtc/">original demo</a>
+uses Google App Engine to exchange the WebRTC offer and answer blobs, whereas
+Gupshup uses Firebase to do the same - eliminating the need to write any server
+logic at all.</p>
+<p>All the important code is in
+<a href="https://github.com/firebase/gupshup/blob/gh-pages/js/chat.js">chat.js</a>. Many
+thanks to Eric Rescorla for providing a ton of help with porting the interop
+logic to JavaScript!</p>
+<h2 id="known-issues-with-webrtc">Known Issues with WebRTC</h2>
+<ul>
+<li>The remote video can sometimes take up to 10 seconds to appear.</li>
+<li>There may be other rough edges around WebRTC.</li>
+</ul>
+<h2 id="license">License</h2>
+<p><a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a>.</p>
