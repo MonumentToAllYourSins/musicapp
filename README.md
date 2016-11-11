@@ -1,5 +1,5 @@
 # musicapp
 
-The repository contains the code I have wrote for a Music App.
+The repository contains the code for Music App.
 
 Keywords: Webrtc, MIDI, Firebase, Video Streaming
